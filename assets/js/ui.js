@@ -39,10 +39,10 @@ export class UI{
         home.classList.add('d-none');
         gameDetails.classList.remove('d-none');
         root.innerHTML = `    
-            <div style="min-height: 100px;" class="col-lg-4">
+            <div style="min-height: 100px;">
                 <img src="${game.thumbnail}" class="w-100 rounded-2" alt="${game.title}">
             </div>
-            <div class="card-body col-lg-8">
+            <div class="card-body">
                 <div class="py-3">
                     <h2 class="card-title mb-3 fs-1 fw-bold">${game.title}</h2>
                     <p class="fw-bold">Category: <span class="fw-normal ms-2 bg-primary px-1 rounded">${game.genre}</span></p>
