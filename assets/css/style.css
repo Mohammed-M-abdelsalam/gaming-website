@@ -1,0 +1,52 @@
+html{
+    scroll-padding-top: 80px;
+}
+
+body{
+    padding-top: 80px;
+    font-family: "Exo 2", "sans-serif";
+}
+
+#navbar{
+    background-color: #3a497b;
+}
+
+#navbar a{
+    width: fit-content;
+    color: #fff;
+}
+#navbar a.active,
+#navbar a:hover{
+    color: #1181b4;
+}
+
+.games-card{
+    filter: grayscale(60%);
+    transition: 0.5s;
+    cursor: pointer;
+    transition: filter 0.8s, transform 0.8s;
+}
+.games-card:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.play-btn:hover{
+    background-color: #e4ae0b;
+}
+
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: 
+    radial-gradient(farthest-side,#1181b4 94%,#0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%,#1181b4);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation: l13 1s infinite linear;
+    translate: -50% -50%;
+  }
+  @keyframes l13{ 
+    100%{transform: rotate(1turn)}
+  }
